@@ -3,11 +3,24 @@ body {
     background-image: url(https://lh3.google.com/u/0/d/1zKjHwHfQ2T7TzbScSKSlKUAlozECOeyr=w1618-h942-iv1);
     background-size: cover;
     background-position: fixed;
+    font-family: 'Livvic', sans-serif;
 }
 
 h1, footer {
     color: white;
-    }
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar{
+    transition: all 3s ease;
+}
+
+.colorea-navbar {
+    background-color: rgba(0, 0, 0, 0.61);
+}
 
 .contenedor{
     width: 90%;
@@ -60,7 +73,6 @@ h1, footer {
 
 }
 
-.contenedor div,
 .contenedor aside {
     /*padding:20px;
     border-radius: 10px;*/
@@ -69,7 +81,7 @@ h1, footer {
     box-shadow: 13px 15px 12px -12px rgba(69,40,0,1);
 }
 
-.contenedor .widget-1, 
+/*.contenedor .widget-1, 
 .contenedor .widget-2 {
     background-color: rgb(214, 181, 34);
     color: grey;
@@ -80,16 +92,28 @@ h1, footer {
     justify-content: center;
     padding:20px;
     border-radius: 10px;
+}*/
+
+.titulo-seccion{
+    background-color: rgba(0, 0, 0, 0.61);
+    /*padding:20px;
+    border-radius: 10px; */
+    grid-column: 1 / -1;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
 }
 
-.contenedor footer{
-    background-color: rgb(0, 1, 68);
-    padding:20px;
-    border-radius: 10px;
-    grid-column: 1 / -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card1 {
+    grid-column: 1/2;    
+}
+.card2 {
+    grid-column: 2/3;    
+}
+
+.contenido p, .contenido h2 {
+    font-family: 'Raleway', sans-serif;
+    padding: 5% 5% 0% 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,6 +123,7 @@ h1, footer {
 
     .contenedor aside {
         grid-column: 1/-1;
+        display: none;
     }
 
     .contenedor .widget-1 {
@@ -127,9 +152,8 @@ body{
     font-size: 1.2rem;
     line-height: 1.4em;
     margin: 0;
-    margin-top: 9rem;
+    margin-top: 0rem;
     text-align: justify;
-    /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Livvic', sans-serif;
 }
 
@@ -206,7 +230,7 @@ p {
 }
 
 .footer{
-    background: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.61);
     padding: 4rem 0;
     text-align: center;
     margin-top: 6rem;
